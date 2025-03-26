@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador financeiro</title>
+
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Início do código HTML -->
+    <div class="fundo">
+        <div class="calculadora">
+            <div class="calc-top">
+                <img src="./img/market-e.png" alt="Imagem da logo Market-E">
+                <h1>Simulador Financeiro</h1>
+            </div>
+
+            <h4>Preencha os campos abaixo para uma simulação de como funciona a Eve!</h4>
+
+            <!-- div é um agrupamento de outras tags no HTML -->
+             <!-- a div 'div-inputs' agrupa todos os inputs da página -->
+            <div class="div-inputs">
+                <!-- Quatro inputs para a dinâmica do simulador, cada um referenciado por um ID -->
+                <label for="ipt_horarioinicial">Horário inicial:</label>
+                <input type="number" id="ipt_horarioinicial" placeholder="Ex: 10">
+
+                <label for="ipt_horariofinal">Horário final:</label>
+                <input type="number" id="ipt_horariofinal" placeholder="Ex: 11">
+
+                <label for="ipt_qtd_setor">Quantidade de setores:</label>
+                <input type="number" id="ipt_qtd_setor" placeholder="Ex: 4">
+
+                <label for="ipt_setor">Setor em específico:</label>
+                <input type="text" id="ipt_setor" placeholder="Ex: açougue">
+
+                <label for="ipt_valor_setor">Lucro (em reais) do setor:</label>
+                <input type="number" id="ipt_valor_setor" placeholder="Ex: 500">
+
+                <label for="ipt_valor_total_mercado">Lucro total (em reais) do mercado:</label>
+                <input type="number" id="ipt_valor_total_mercado" placeholder="Ex: 1000">
+            </div>
+
+
+            <!-- Um botão que, ao clicar, executa uma função chamada "Simular()".
+             O botão é referenciado por uma class para a estilização com o CSS -->
+            <button class="button" onclick="Simular()">Simular</button>
+
+            <div class="resposta" id="div_resposta_media"></div>
+            <div class="resposta" id="div_resposta_porcentagem"></div>
+        </div>
+    </div>
+
+
+
+    <!-- Link para o arquivo Javascript -->
+    <script src="script.js"></script>
+</body>
+</html>

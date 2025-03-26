@@ -1,0 +1,135 @@
+/* O asterístico é a seleção de toda a estrutura do site para a estilização */
+/* Aqui estamos fazendo uma estilização padrão para todo o site */
+/*Quando tem 2 valores em um atributo quer dizer que o primeiro valor é para o top e bottom e o segundo valor é para left e right*/
+
+* {
+    margin: 0; /*Margem definida em 0 (sem margem)*/
+    padding: 0; /*Padding definida em 0 (sem margem)*/
+    box-sizing: border-box; /*Dimensão em caixa para facilitar a estilização em flexbox(é um modo de estilização)*/
+}
+
+/* Body é a tag do corpo do HTML, aqui foi padronizado duas estilizações */
+body {
+    height: 100vh; /*altura definida para ocupar 100% da visualização da página (vh = viewport height)*/
+    font-family: sans-serif; /*Fonte de texto sans-serif*/
+}
+ /* Essa é uma div com a classe de nome 'fundo', onde está englobando toda a calculadora */
+.fundo {
+    height: 100vh;
+    display: flex; /*aqui foi definido sua exibição 'flex' para podermos trabalhar com flexbox*/
+    justify-content: center; /*definindo o conteúdo da div 'fundo' centralizada horizontalmente*/
+    align-items: center; /*definindo o conteúdo da div 'fundo' centralizada verticalmente*/
+}
+
+.calculadora {
+    margin-top: 550px;
+    display: flex;
+    flex-direction: column; /*direcionando todo o conteudo dentro da div em coluna*/
+    align-items: center; /*definindo o conteúdo da div 'fundo' centralizada verticalmente*/
+    justify-content: center; /*definindo o conteúdo da div 'fundo' centralizada horizontalmente*/
+
+    background-color: rgb(84, 173, 250); /*Cor de fundo*/
+    border-radius: 16px; /*deixar os cantos redondos*/
+    padding: 32px ; /*espaçamento interno*/
+    width: 800px;
+}
+
+.calc-top {
+    width: 100%;
+    display: flex;
+    align-items: center; /*definindo o conteúdo da div 'fundo' centralizada verticalmente*/
+    justify-content: space-evenly; /*definindo o conteúdo dentro da div com um espaçamento uniforme horizontalmente*/
+}
+
+img {
+    height: 164px; /*altura*/
+    width: 164px; /*largura*/
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.3);
+}
+
+.div-inputs {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /*direcionando todo o conteudo dentro da div em coluna*/
+
+    gap: 16px; /*espaçamento do conteúdo dentro da div*/
+    padding: 22px 0;
+}
+
+label {
+    font-size: 20px; /*tamanho da fonte*/
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid white; /*borda com linha sólida branca de 2 px*/
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus { /*ao clicar no input irá executar o que ta dentro*/
+    border-color:rgb(69, 238, 238); /* Azul ao focar */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+input::placeholder { /*::placeholder acessa o placeholder do HTML*/
+    color: rgb(0, 116, 116);
+}
+
+label {
+    color: #272727; /*definindo a cor do label*/
+}
+
+h1 {
+    margin-bottom: 16px; /*margem da parte de baixo*/
+    transition: transform 0.3s ease-in-out ; /*transition deve ter os atributos dentro do hover, adiciona o nome do atributo que está no hover, o tempo abaixo de 1segundo e o efeito ease*/
+    cursor: pointer; /*muda o cursor ao passar o mouse em cima do conteúdo*/
+}
+
+h1:hover { /*efeito que você quer dar a uma tag ou classe*/
+    transform: scale(1.1); /*aqui irá mexer diretamente na escala do H1*/
+}
+
+h4 {
+    margin-top: 24px;
+    font-size: 20px;
+}
+
+button {
+    padding: 14px 28px; /*Espaçamento interno*/ /*Quando tem 2 valores em um atributo quer dizer que o primeiro valor é para o top e bottom e o segundo valor é para left e right*/
+    border-radius: 8px;
+    border-style: none;
+    cursor: pointer;
+    color: white; /*cor do texto de dentro do botão*/
+    font-size: 18px;
+    font-weight: 600; /*grossura da fonte*/
+    background-color: rgb(0, 132, 255);
+    transition:  transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: rgb(75, 150, 255);
+}
+
+.resposta {
+    margin-top: 32px;
+    background-color: rgb(0, 136, 255);
+    border-radius: 5px;
+    width: 100%;
+    padding: 16px;
+    display: none;
+}
+
+.resposta p {
+    color: white;
+    text-align: center;
+    font-weight: 600;
+}
