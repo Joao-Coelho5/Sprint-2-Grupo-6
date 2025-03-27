@@ -1,0 +1,82 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #51a2ff;
+    color: white;
+}
+
+.cabecalho_botoes {
+    display: flex;
+    gap: 20px;
+    margin: 30px;
+}
+.cabecalho_titulo {
+    text-align: left;
+    margin: 30px;
+}
+
+.cabecalho_botao {
+    border-radius: 15px;
+    background-color: #2f6db5;
+    color: white;
+    padding: 10px;
+    
+    
+}
+
+.conteudo_input {
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container{
+     
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+        height: 100vh; 
+        text-align: center; 
+    }
+    
+    .section {
+        display: flex;
+        text-align: right;
+    }
+
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 80%;
+        max-width: 300px;
+    }
+
+    
+    .imagem {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+
+    .texto_info {
+        max-width: 400px;
+    }
+
+    .informacoes {
+        display: flex;
+        align-items: center;
+        margin-top: 40px;
+        gap: 20px;
+        text-align: left;
+    }
